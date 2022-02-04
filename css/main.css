@@ -1,0 +1,223 @@
+:root {
+  --font-weight__normal: 300;
+  --font-weight__bold: 700;
+}
+
+body {
+  background-color: #000;
+  background-image: url(../images/nautilus.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 60px solid #000;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: var(--font-weight__normal);
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Spectral', serif;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 1.1;
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  max-width: 750px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1100px;
+  background-image: url(../images/topo-bg.png);
+  background-position: top center;
+  background-repeat: repeat;
+  padding: 0 32px;
+}
+
+section {
+  border-bottom: 4px solid #0b1525;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  width: 100%;
+}
+
+  section.hero {
+    margin-bottom: 96px;
+    padding-bottom: 96px;
+    border: none;
+  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+nav,
+footer {
+  display: flex;
+  align-items: center;
+  margin: 0 -16px;
+}
+
+nav {
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+
+nav ul {
+  height: 64px;
+}
+
+nav a {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+footer {
+  font-size: 18px;
+  letter-spacing: 1px;
+  background-color: #000;
+  margin: 0 -32px;
+}
+
+nav ul,
+footer ul {
+  align-items: center;
+  display: flex;
+  flex: 0 0 100%;
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li,
+footer ul li {
+  margin: 0 16px;
+}
+
+nav ul li:first-child,
+footer ul li:first-child {
+  margin-right: auto;
+}
+
+ul li .logo {
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-right: auto;
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  height: 56px;
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  font-size: 24px;
+  font-weight: var(--font-weight__bold);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: var(--font-weight__normal);
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  padding: 4px 16px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 4px 16px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "team-member-img team-member-title"
+    "team-member-img team-member-role"
+    "team-member-img team-member-experience";
+}
+
+.team-member-img {
+  background-color: #0b1525;
+  border-radius: 16px;
+  grid-area: team-member-img;
+  height: 128px;
+  width: 128px;
+}
+
+.team-member-title {
+  grid-area: team-member-title;
+  font-size: 24px;
+  font-weight: var(--font-weight__bold);
+}
+
+.team-member-role {
+  grid-area: team-member-role;
+  font-size: 18px;
+}
+
+.team-member-experience {
+  grid-area: team-member-experience;
+  font-size: 18px;
+}
+
+
+
+/* utils */
+.br {
+  display: block;
+}
